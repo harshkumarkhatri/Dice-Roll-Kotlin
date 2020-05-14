@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DiceRoller</string>
+<!--    <string name="roll_label">Dice roll</string>-->
+    <string name="roll_label">Dice Roll</string>
+    <string name="chaliye_shuru_karte_hai">Chaliye Shuru karte hai!</string>
+</resources>
