@@ -19,33 +19,32 @@
 <!--        app:layout_constraintRight_toRightOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
-    <ImageView
-        android:id="@+id/dice_image2"
-        android:layout_width="148dp"
-        android:layout_height="120dp"
-        android:layout_gravity="center_horizontal"
-        android:contentDescription="Image for the dice"
-        app:layout_constraintBottom_toTopOf="@+id/dice_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57"
-        app:srcCompat="@drawable/empty_dice"
-        tools:src="@drawable/dice_1" />
+<!--    <ImageView-->
+<!--        android:id="@+id/dice_image2"-->
+<!--        android:layout_width="148dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:contentDescription="Image for the dice"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/dice_image"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.57"-->
+<!--        app:srcCompat="@drawable/empty_dice"-->
+<!--        tools:src="@drawable/dice_1" />-->
 
     <ImageView
         android:id="@+id/dice_image"
-        android:layout_width="170dp"
-        android:layout_height="130dp"
+        android:layout_width="243dp"
+        android:layout_height="256dp"
         android:layout_gravity="center_horizontal"
         android:contentDescription="Image for the dice"
         app:layout_constraintBottom_toTopOf="@+id/roll_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81"
+        app:layout_constraintVertical_bias="0.516"
         app:srcCompat="@drawable/empty_dice"
         tools:src="@drawable/dice_1" />
 

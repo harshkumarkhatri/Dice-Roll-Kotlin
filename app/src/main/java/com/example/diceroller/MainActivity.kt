@@ -10,7 +10,7 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
 
     lateinit var diceImage : ImageView
-    lateinit var diceImage2 : ImageView
+//    lateinit var diceImage2 : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,8 +20,10 @@ class MainActivity : AppCompatActivity() {
         // listener to it.
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener { rollDice() }
+        val clearButton:Button=findViewById(R.id.button)
+        clearButton.setOnClickListener { clear() }
         diceImage = findViewById(R.id.dice_image)
-        diceImage2 = findViewById(R.id.dice_image2)
+//        diceImage2 = findViewById(R.id.dice_image2)
     }
     private fun getRandomDiceImage() : Int {
         val randomInt = (1..6).random()
@@ -35,6 +37,12 @@ class MainActivity : AppCompatActivity() {
             else -> R.drawable.dice_6
         }
     }
+
+//    Function for the clear button
+    private fun clear(){
+    diceImage.setImageResource(R.drawable.empty_dice)
+}
+
 //    override fun onCreate(savedInstanceState: Bundle?) {
 //        lateinit var diceImage:ImageView
 //        super.onCreate(savedInstanceState)
@@ -76,7 +84,7 @@ class MainActivity : AppCompatActivity() {
 //    }
 private fun rollDice() {
     diceImage.setImageResource(getRandomDiceImage())
-    diceImage2.setImageResource(getRandomDiceImage())
+//    diceImage2.setImageResource(getRandomDiceImage())
 }
 
 //    The double dice challenge can be done either by using two different functions or by using different variables in a single function
